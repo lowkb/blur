@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  background: #2E2E2D;
+  color: #CBCDD0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 72px;
+  background: #545353;
+  display: grid;
+  grid-auto-rows: 64px;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar a {
+  width: 40px;
+  height: 40px;
+  background: #7C7876;
+  color: #2E2E2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background: #A4A6A8;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 56px;
+  background: #A4A6A8;
+  color: #2E2E2D;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.main {
+  flex: 1;
+  padding: 16px;
+  background: #2E2E2D;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(46, 46, 45, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 320px;
+  background: #545353;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal h3 {
+  color: #CBCDD0;
+  font-weight: 500;
+}
+
+.modal input {
+  background: #2E2E2D;
+  border: 1px solid #7C7876;
+  color: #CBCDD0;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.actions button {
+  background: #7C7876;
+  color: #2E2E2D;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.actions button:hover {
+  background: #A4A6A8;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 56px;
+  }
+
+  .sidebar a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
