@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks'
-import AppRouter from './router'
+import AppRouter from './Router'
 import Modal from './components/Modal'
 
 export default function Layout() {
